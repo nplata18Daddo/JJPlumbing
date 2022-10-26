@@ -1,0 +1,63 @@
+.service {
+  &__container {
+    width: 60% !important;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    @include phone {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 90% !important;
+    }
+
+    &__background-secondary {
+      @extend .service__container;
+      background: $secondary-color;
+    }
+    &__background-main {
+      @extend .service__container;
+      background: $main-color;
+    }
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: white;
+
+    padding-left: 1rem;
+
+    &__background-secondary {
+      @extend .service__title;
+
+      background: $secondary-color;
+      margin-right: -32px;
+      border-radius: 100px 0px 0px 100px;
+    }
+    &__background-main {
+      @extend .service__title;
+      background: $main-color;
+      margin-left: -32px;
+      border-radius: 0px 100px 100px 0px;
+    }
+  }
+}
+.services__container {
+  background-image: url("../../assets/images/background.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.service__component {
+  @include tablet {
+    flex-direction: column-reverse !important;
+  }
+}
