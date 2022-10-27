@@ -6,6 +6,7 @@
     padding-top: 0;
     z-index: 4;
     background-color: $white;
+    padding: 0;
 
 
     &__responsive{
@@ -32,7 +33,7 @@
             border: 1px solid white;
             align-self: left;
             left: 0;
-            @media (min-width:840px) {
+            @media (min-width:900px) {
                 display: none !important;
                 height: auto !important;
                 padding-bottom: 1rem;
@@ -49,7 +50,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            @include tablet {
+            @media (max-width:900px) {
                 padding: 0;
                 
               }
@@ -58,7 +59,7 @@
                 display: flex;
             align-items: center;
             flex-direction: column;
-                @include tablet {
+            @media (max-width:900px) {
                     display: none !important;
                     height: auto !important;
                     
@@ -85,7 +86,7 @@
         height: 17vh;
         color: $blueyonder;
         box-shadow: 0px 9px 6px rgba(0, 0, 0, 0.25);
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         @include tablet {
             display: none !important;
             height: auto !important;

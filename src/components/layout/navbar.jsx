@@ -18,7 +18,7 @@ export const Navbar = () => {
             <Col xs={4} lg={3} className="navbar__topRow__component">
                 864 448 4866
             </Col>
-            <Col xs={6} lg={5} className="navbar__topRow__component">
+            <Col xs={6} lg={6} className="navbar__topRow__component">
                 <Button className="navbar__topRow__component__button">Schedule here</Button>
             </Col>
             <Col
