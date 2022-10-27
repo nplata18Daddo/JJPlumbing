@@ -1,0 +1,40 @@
+container{
+    display: flex;
+    align-items: center;
+}
+.location{
+    background-color: $secondary-color;
+    padding: 5vh 10vw;
+    
+    &__locationlistContainer{
+        height: 60vh;
+        @extend container;
+        justify-content: space-evenly;
+        flex-direction: column;
+        &__listItem{
+            width: 90%;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            h1{
+                width: 80%;
+            }
+            svg{
+                margin: 0;
+                width:fit-content;
+            }
+        }
+
+    }
+    &__imgContainer{
+        @extend container;
+        height: 100%;
+        &__img{
+            width: 100%;
+        }
+    }
+}

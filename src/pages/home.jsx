@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { HomeBannerComponent } from "../components/Common/homeBannerComponent";
+import { Location } from "../components/Common/location";
 import { ServiceComponent } from "../components/Common/serviceComponent";
+import { WhyUs } from "../components/Common/whyus";
 
 export const Home = () => {
   return (
@@ -43,6 +45,8 @@ export const Home = () => {
           </Row>
         </Container>
       </div>
+      <WhyUs />
+      <Location/>
     </>
   );
 };
