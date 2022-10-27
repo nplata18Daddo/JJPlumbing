@@ -13,7 +13,7 @@ export const ServiceComponent = (props) => {
       <Row
         className={
           props.color === "main"
-            ? "flex-col-reverse service__component "
+            ? "flex-row-reverse service__component "
             : "service__component"
         }
       >

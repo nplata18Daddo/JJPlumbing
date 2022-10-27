@@ -1,0 +1,10 @@
+.home {
+  &__container {
+    height: 600px;
+    width: 100%;
+    background-image: url("../../assets/images/homeImage.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
