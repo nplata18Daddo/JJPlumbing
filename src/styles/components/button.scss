@@ -26,7 +26,7 @@
   &__main-filled {
     @extend .button;
     text-align: center;
-    background-color: $main-color !important;
+    background-color: $main-color;
 
     font-size: 24px;
     position: relative;
@@ -37,12 +37,12 @@
   }
   &__main-filled:hover {
     border-style: outset;
-    background-color: $main-color !important;
+    background-color: $secondary-color !important;
     border: none;
   }
   &__main-filled:focus {
     border-style: outset;
-    background-color: $main-color !important;
+    background-color: $secondary-color !important;
     border: none;
   }
 }

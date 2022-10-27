@@ -25,7 +25,7 @@ export const HomeBannerComponent = () => {
 
             <Col xs={12}>
               {" "}
-              <Button className="button__main-filled">
+              <Button className="button__main-filled raise">
                 REQUEST SERVICE
                 <BsFillCalendarFill
                   style={{ marginLeft: "12px", marginBottom: "8px" }}
