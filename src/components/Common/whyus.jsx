@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import logo from "../../assets/images/whyUs/jjlogo.png";
 export const WhyUs = () => {
   return (
     <div className="whyUs">
@@ -9,6 +9,7 @@ export const WhyUs = () => {
           <Container className="whyUs__logoContainer">
             <div className="whyUs__logoContainer__square">
               <h1>Why Us</h1>
+              <img src={logo} className="whyUs__logoContainer__logo"/>
             </div>
           </Container>
         </Col>
