@@ -1,0 +1,30 @@
+.serviceDetail {
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: white;
+
+    padding-left: 1rem;
+
+    background: $secondary-color;
+
+    box-shadow: 2px 9px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 91.5px 91.5px 0px;
+
+    &__right {
+      @extend .serviceDetail__title;
+      margin-right: -32px;
+      border-radius: 100px 0px 0px 100px;
+    }
+  }
+}
+
+li {
+  list-style: none;
+  padding: 10px 30px;
+  background-image: url("../../assets/images/wrench.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+}
