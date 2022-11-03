@@ -26,7 +26,7 @@ container{
             border-radius: 25px;
             color: $sixth-color;
             filter: drop-shadow(7px 10px 4px rgba(0,0,0,0.25));
-            @include phone{
+            @include tablet{
                 width: 100%;
                 height: fit-content;
                 padding: 2vh 0;
@@ -42,7 +42,7 @@ container{
         flex-direction: column;
         height: 70vh;
         justify-content: space-evenly;
-        @include phone
+        @include tablet
         {
             padding: 0;
         }
@@ -55,7 +55,7 @@ container{
             justify-content: center;
             align-items: center;
             display: flex;
-            @include phone{
+            @include tablet{
                 width: 100%;
             }
             h1{

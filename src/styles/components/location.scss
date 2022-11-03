@@ -5,7 +5,7 @@ container{
 .location{
     background-color: $secondary-color;
     padding: 5vh 10vw;
-    @include phone{
+    @include tablet{
         padding: 5vh 5vw;
     }
     
@@ -23,7 +23,7 @@ container{
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            @include phone{
+            @include tablet{
                 width: 100%;
             }
             h1{
