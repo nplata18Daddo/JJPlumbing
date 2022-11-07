@@ -111,16 +111,19 @@ export const Navbar = () => {
             <Collapse in={open}>
           <div id="navbarCollapse">
             
+            <div className="navbarItemsContainer">
+
             <Row xs={12} className="navbar__responsive">
             
-            <Row xs={12}><Col><Link to={"/heating"}>Heating</Link></Col></Row>
-            <Row xs={12}><Col><Link to={"/cooling"}>Cooling</Link></Col></Row>
-            <Row xs={12}><Col><Link to={"/plumbing"}>Plumbing</Link></Col></Row>
-            <Row xs={12}><Col><Link to={"/electrical"}>Electrical</Link></Col></Row>
-            <Row xs={12}><Col><Link to={"/about"}>About</Link></Col></Row>
-            <Row xs={12}><Col><Link to={"/location"}>Location</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link className="navbar__responsive__component__link" to={"/heating"}>Heating</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link to={"/cooling"}>Cooling</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link to={"/plumbing"}>Plumbing</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link to={"/electrical"}>Electrical</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link to={"/about"}>About</Link></Col></Row>
+            <Row xs={12}><Col className="navbar__responsive__component"><Link to={"/location"}>Location</Link></Col></Row>
 
         </Row>
+            </div>
             
           </div>
         </Collapse>
