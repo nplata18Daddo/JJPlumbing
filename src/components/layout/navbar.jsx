@@ -9,7 +9,7 @@ import logoNavBar from "../../assets/images/jjnavbarOptions.png"
 export const Navbar = () => {
 
     const [open, setOpen] = useState(false);
-    const [scroll, setScroll] = useState(0)
+    const [scroll, setScroll] = useState(0);
 
 
     useEffect(() => {

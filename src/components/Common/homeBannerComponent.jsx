@@ -4,7 +4,7 @@ import { BsFillCalendarFill } from "react-icons/bs";
 export const HomeBannerComponent = () => {
   return (
     <div className="home__container">
-      <Row style={{ height: "100%", textAlign: "center" }}>
+      <Row style={{ height: "100%", width: "100%", textAlign: "center" }}>
         <Col
           xs={12}
           lg={6}
