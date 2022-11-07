@@ -40,10 +40,18 @@
 
         &__links{
             margin-bottom: 5%;
+
+            
         }
 
         &__linkContainer{
             font-size: large;
+
+
+            a{
+                text-decoration: none;
+                color: white
+            }
         }
 
 
