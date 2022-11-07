@@ -6,6 +6,7 @@ import izquierdaImg from "../../assets/images/jjfooter.png";
 import facebook from "../../assets/images/Facebook.png";
 import ig from "../../assets/images/Instagram.png";
 import linkedin from "../../assets/images/LinkedIn.png";
+import { Link, NavLink } from "react-router-dom";
 
 
 
@@ -22,10 +23,14 @@ export const Footer = () => {
                 </Row>
                 <Row xs={12} className="footer__mid__linkContainer">
                     <Col xs={6}>
+                        <Link to={"/about"}>
                     About us
+                        </Link>
                     </Col>
                     <Col xs={6}>
+                        <Link to={"/location"}>
                         Locations
+                        </Link>
                     </Col>
                 </Row>
             </Col>

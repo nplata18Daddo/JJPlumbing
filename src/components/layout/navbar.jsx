@@ -1,5 +1,6 @@
 import React, { useState, useTransition, useEffect, useNavigate } from "react";
 import { Row, Col, Collapse, Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 import logoNavBar from "../../assets/images/jjnavbarOptions.png"
 
@@ -26,10 +27,16 @@ export const Navbar = () => {
             <Row xs={12} className="navbar__topRow">
                 
             <Col xs={4} md={3} lg={4} className="navbar__topRow__component__spartanburg">
+                <Link to={"/location"}>
                 Greenvile & Spartanburg
+                </Link>
+                
             </Col>
             <Col xs={4}  md={4} lg={4} className="navbar__topRow__component">
+                
                 864 448 4866
+                
+                
             </Col>
             <Col xs={4} lg={4} className="navbar__topRow__component">
                 <Button className="navbar__topRow__component__button">Schedule here</Button>
@@ -57,25 +64,47 @@ export const Navbar = () => {
             <Row className="navbar__options" style={scroll<=70?{minHeight:"17vh"}:{minHeight:"5vh"}}>
                 
                 <Col className="navbar__options__component">
+                    <Link to={"/heating"}>
                     Heating
+                    </Link>
+                    
                 </Col>
                 <Col className="navbar__options__component">
+                    <Link to={"/cooling"}>
+                    
                     Cooling
+                    </Link>
                 </Col>
                 <Col className="navbar__options__component">
+                    <Link to={"/plumbing"}>
+                    
                     Plumbing
+                    </Link>
                 </Col>
                 <Col className="navbar__options__component">
+                    <Link to={"/"}>
+                    
                     <img className="navbar__options__component__image" alt="" src={logoNavBar} style={scroll<=70?{}:{width:"100px"}}></img>
+                    </Link>
                 </Col>
                 <Col className="navbar__options__component">
+                    <Link to={"/electrical"}>
+                    
                     Electrical
+                    </Link>
                 </Col>
                 <Col className="navbar__options__component">
+
+                    <Link to={"/about"}>
+                    
                     About
+                    </Link>
                 </Col>
                 <Col className="navbar__options__component">
+                    <Link to={"/location"}>
+                    
                     Location
+                    </Link>
                 </Col>
             </Row>
             
@@ -84,12 +113,12 @@ export const Navbar = () => {
             
             <Row xs={12} className="navbar__responsive">
             
-            <Row xs={12}><Col>Heating</Col></Row>
-            <Row xs={12}><Col>Cooling</Col></Row>
-            <Row xs={12}><Col>Plumbing</Col></Row>
-            <Row xs={12}><Col>Electrical</Col></Row>
-            <Row xs={12}><Col>About</Col></Row>
-            <Row xs={12}><Col>Location</Col></Row>
+            <Row xs={12}><Col><Link to={"/heating"}>Heating</Link></Col></Row>
+            <Row xs={12}><Col><Link to={"/cooling"}>Cooling</Link></Col></Row>
+            <Row xs={12}><Col><Link to={"/plumbing"}>Plumbing</Link></Col></Row>
+            <Row xs={12}><Col><Link to={"/electrical"}>Electrical</Link></Col></Row>
+            <Row xs={12}><Col><Link to={"/about"}>About</Link></Col></Row>
+            <Row xs={12}><Col><Link to={"/location"}>Location</Link></Col></Row>
 
         </Row>
             
