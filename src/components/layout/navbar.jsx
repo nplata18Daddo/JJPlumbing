@@ -5,10 +5,9 @@ import { Link, NavLink } from "react-router-dom";
 import logoNavBar from "../../assets/images/jjnavbarOptions.png";
 
 export const Navbar = () => {
+  const [allowScroll, setAllowScroll] = useState(0);
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(0);
-
-  const [allowScroll, setAllowScroll] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
