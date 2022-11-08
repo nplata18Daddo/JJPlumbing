@@ -7,6 +7,7 @@ import logoNavBar from "../../assets/images/jjnavbarOptions.png";
 export const Navbar = () => {
   const [allowScroll, setAllowScroll] = useState(0);
   const [open, setOpen] = useState(false);
+  const [up, setUp] = useState(true);
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
@@ -16,6 +17,13 @@ export const Navbar = () => {
 
   function handleScroll() {
     let yScroll = window.scrollY;
+    if(yScroll > 500)
+    {
+      setUp(false);
+    }
+    else if ( yScroll <= 300 ){
+      setUp(true);
+    }
     setScroll(yScroll);
   }
   return (
@@ -63,7 +71,7 @@ export const Navbar = () => {
 
       <Row
         className="navbar__options"
-        style={scroll <= 500 ? { minHeight: "17vh" } : { minHeight: "5vh" }}
+        style={up ? { minHeight: "17vh" } : { minHeight: "5vh" }}
       >
         <Col className="navbar__options__component">
           <Link to={"/services/plumbing"}>Plumbing</Link>
@@ -82,7 +90,7 @@ export const Navbar = () => {
               className="navbar__options__component__image"
               alt=""
               src={logoNavBar}
-              style={scroll <= 500 ? {} : { width: "100px" }}
+              style={up ? {} : { width: "100px" }}
             ></img>
           </Link>
         </Col>
