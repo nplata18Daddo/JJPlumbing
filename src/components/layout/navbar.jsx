@@ -17,7 +17,6 @@ export const Navbar = () => {
   function handleScroll() {
     let yScroll = window.scrollY;
     setScroll(yScroll);
-    console.log(yScroll);
   }
   return (
     <div className="navbar">
@@ -64,7 +63,7 @@ export const Navbar = () => {
 
       <Row
         className="navbar__options"
-        style={scroll <= 1000 ? { minHeight: "17vh" } : { minHeight: "5vh" }}
+        style={scroll <= 500 ? { minHeight: "17vh" } : { minHeight: "5vh" }}
       >
         <Col className="navbar__options__component">
           <Link to={"/services/plumbing"}>Plumbing</Link>
@@ -83,7 +82,7 @@ export const Navbar = () => {
               className="navbar__options__component__image"
               alt=""
               src={logoNavBar}
-              style={scroll <= 1000 ? {} : { width: "100px" }}
+              style={scroll <= 500 ? {} : { width: "100px" }}
             ></img>
           </Link>
         </Col>
