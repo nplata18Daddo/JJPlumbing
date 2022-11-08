@@ -62,13 +62,15 @@ export const Navbar = () => {
         style={scroll <= 1000 ? { minHeight: "17vh" } : { minHeight: "5vh" }}
       >
         <Col className="navbar__options__component">
-          <Link to={"/heating"}>Plumbing</Link>
+          <Link to={"/services/plumbing"}>Plumbing</Link>
         </Col>
         <Col className="navbar__options__component">
-          <Link to={"/cooling"}>Drain Cleaning</Link>
+          <Link to={"/services/draingCleaning"}>Drain Cleaning</Link>
         </Col>
         <Col className="navbar__options__component">
-          <Link to={"/plumbing"}>Pipe Descaling and Patching</Link>
+          <Link to={"/services/pipeDescaling"}>
+            Pipe Descaling and Patching
+          </Link>
         </Col>
         <Col className="navbar__options__component">
           <Link to={"/"}>
@@ -81,13 +83,13 @@ export const Navbar = () => {
           </Link>
         </Col>
         <Col className="navbar__options__component">
-          <Link to={"/electrical"}>Camera Inspection</Link>
+          <Link to={"/services/cameraInspection"}>Camera Inspection</Link>
         </Col>
         <Col className="navbar__options__component">
           <Link to={"/about"}>About</Link>
         </Col>
         <Col className="navbar__options__component">
-          <Link to={"/location"}>Location</Link>
+          <Link to={"/locations"}>Location</Link>
         </Col>
       </Row>
 
@@ -99,7 +101,7 @@ export const Navbar = () => {
                 <Col className="navbar__responsive__component">
                   <Link
                     className="navbar__responsive__component__link"
-                    to={"/heating"}
+                    to={"/services/plumbing"}
                   >
                     Plumbing
                   </Link>
@@ -107,17 +109,21 @@ export const Navbar = () => {
               </Row>
               <Row xs={12}>
                 <Col className="navbar__responsive__component">
-                  <Link to={"/cooling"}>Drain Cleaning</Link>
+                  <Link to={"/services/draingCleaning"}>Drain Cleaning</Link>
                 </Col>
               </Row>
               <Row xs={12}>
                 <Col className="navbar__responsive__component">
-                  <Link to={"/plumbing"}>Pipe Descaling and Patching</Link>
+                  <Link to={"/services/pipeDescaling"}>
+                    Pipe Descaling and Patching
+                  </Link>
                 </Col>
               </Row>
               <Row xs={12}>
                 <Col className="navbar__responsive__component">
-                  <Link to={"/electrical"}>Camera Inspection</Link>
+                  <Link to={"/services/cameraInspection"}>
+                    Camera Inspection
+                  </Link>
                 </Col>
               </Row>
               <Row xs={12}>
@@ -127,7 +133,7 @@ export const Navbar = () => {
               </Row>
               <Row xs={12}>
                 <Col className="navbar__responsive__component">
-                  <Link to={"/location"}>Location</Link>
+                  <Link to={"/locations"}>Location</Link>
                 </Col>
               </Row>
             </Row>

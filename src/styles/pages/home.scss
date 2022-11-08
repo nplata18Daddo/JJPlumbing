@@ -8,3 +8,8 @@
     background-repeat: no-repeat;
   }
 }
+.container__responsive {
+  @include tablet {
+    min-height: 70vh !important;
+  }
+}

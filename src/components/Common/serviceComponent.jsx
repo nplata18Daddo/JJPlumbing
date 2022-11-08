@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ServiceComponent = (props) => {
   return (
@@ -42,7 +43,9 @@ export const ServiceComponent = (props) => {
               </p>
             </Col>
             <div xs={12} className="text-center no-height">
-              <Button className="button__fourth-filled">More Info</Button>
+              <Link to={props.link}>
+                <Button className="button__fourth-filled">More Info</Button>
+              </Link>
             </div>
           </Row>
         </Col>
