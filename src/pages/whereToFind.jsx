@@ -2,8 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ImLocation } from "react-icons/im";
 import LOCATIONS from "../components/Common/serviceArea";
-import map from "../assets/images/locations/jjmap.png"
-
+import map from "../assets/images/locations/jjmap.png";
+import Fade from "react-reveal/Fade";
 export const WhereToFind = () => {
   return (
     <div className="where">
@@ -55,9 +55,14 @@ export const WhereToFind = () => {
               })}
             </Col>
           </Row>
-          <Row className="where__mainDiv__mainContainer__imgRow">
-            <img src={map} className="where__mainDiv__mainContainer__imgRow__img"/>
-          </Row>
+          <Fade up>
+            <Row className="where__mainDiv__mainContainer__imgRow">
+              <img
+                src={map}
+                className="where__mainDiv__mainContainer__imgRow__img"
+              />
+            </Row>
+          </Fade>
         </Container>
       </div>
     </div>

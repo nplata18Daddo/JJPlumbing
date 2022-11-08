@@ -12,6 +12,10 @@
     box-shadow: 2px 9px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 91.5px 91.5px 0px;
 
+    @include phone {
+      padding-left: 3rem;
+    }
+
     &__right {
       @extend .serviceDetail__title;
       margin-right: -32px;

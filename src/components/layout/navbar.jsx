@@ -22,6 +22,11 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <Row xs={12} className="navbar__topRow">
+        <Col xs={12} className="title__responsive">
+          <Link to={"/"}>
+            <img style={{ width: "6rem" }} alt="" src={logoNavBar}></img>
+          </Link>
+        </Col>
         <Col
           xs={4}
           md={3}
@@ -30,16 +35,16 @@ export const Navbar = () => {
         >
           <Link to={"/location"}>Greenvile & Spartanburg</Link>
         </Col>
-        <Col xs={4} md={4} lg={4} className="navbar__topRow__component">
+        <Col xs={5} md={4} lg={4} className="navbar__topRow__component">
           864 448 4866
         </Col>
-        <Col xs={4} lg={4} className="navbar__topRow__component">
+        <Col xs={5} lg={4} className="navbar__topRow__component">
           <Button className="navbar__topRow__component__button">
             Schedule here
           </Button>
         </Col>
         <Col
-          xs={4}
+          xs={2}
           lg={1}
           className="text-left navbar__col__toggle navbar__responsive__col"
           id="margenArriba"
