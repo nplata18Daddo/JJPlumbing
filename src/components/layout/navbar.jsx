@@ -3,7 +3,7 @@ import { Row, Col, Collapse, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
 import logoNavBar from "../../assets/images/jjnavbarOptions.png";
-
+import { Helmet } from "react-helmet";
 export const Navbar = () => {
   const [allowScroll, setAllowScroll] = useState(0);
   const [open, setOpen] = useState(false);
@@ -17,11 +17,9 @@ export const Navbar = () => {
 
   function handleScroll() {
     let yScroll = window.scrollY;
-    if(yScroll > 500)
-    {
+    if (yScroll > 500) {
       setUp(false);
-    }
-    else if ( yScroll <= 300 ){
+    } else if (yScroll <= 300) {
       setUp(true);
     }
     setScroll(yScroll);
@@ -46,9 +44,26 @@ export const Navbar = () => {
           864 448 4866
         </Col>
         <Col xs={5} lg={4} className="navbar__topRow__component">
-          <Button className="navbar__topRow__component__button">
+          <Helmet>
+            <link
+              rel="stylesheet"
+              media="screen"
+              href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css"
+            />
+            <script
+              src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_dialog_snippet.js"
+              clienthub_id="c97c1b1b-e69c-4439-9e74-53580fa9c440"
+              form_url="https://clienthub.getjobber.com/client_hubs/c97c1b1b-e69c-4439-9e74-53580fa9c440/public/work_request/embedded_dialog_work_request_form"
+            ></script>
+          </Helmet>
+          <button
+            className="navbar__topRow__component__button"
+            name="button"
+            type="button"
+            id="work-request-button-c97c1b1b-e69c-4439-9e74-53580fa9c440"
+          >
             Schedule here
-          </Button>
+          </button>
         </Col>
         <Col
           xs={2}

@@ -142,10 +142,11 @@
       }
 
       &__button {
-        background-color: $blueyonder;
-        border-radius: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        background-color: $blueyonder !important;
+        border-radius: 20px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        font-family: "F37 Ginger" !important;
       }
       &__button:hover {
         background-color: $blueyonder;
