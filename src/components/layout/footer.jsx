@@ -29,31 +29,35 @@ export const Footer = () => {
           </Row>
         </Col>
         <Col xs={5} lg={3} className="footer__rigth">
-          <Row xs={12} className="footer__rigth__follow">
-            FOLLOW US
-          </Row>
-          <Row xs={12} className="footer__rigth__iconsContainer">
-            <Col xs={4} className="footer__rigth__iconsContainer__icon">
-              <img
-                className="footer__rigth__iconsContainer__icon__img"
-                alt=""
-                src={facebook}
-              ></img>
+          <Row className="footer__rigth__follow">FOLLOW US</Row>
+          <Row xs={12} className="footer__rigth__iconsContainer text-center">
+            <Col xs={6} className="footer__rigth__iconsContainer__icon">
+              <a href="www.facebook.com/juan.ddrain">
+                <img
+                  className="footer__rigth__iconsContainer__icon__img"
+                  alt=""
+                  src={facebook}
+                ></img>
+              </a>
             </Col>
-            <Col xs={4} className="footer__rigth__iconsContainer__icon">
-              <img
-                className="footer__rigth__iconsContainer__icon__img"
-                alt=""
-                src={ig}
-              ></img>
+            <Col xs={6} className="footer__rigth__iconsContainer__icon">
+              <a href="https://www.instagram.com/jjplumbingsc/">
+                <img
+                  className="footer__rigth__iconsContainer__icon__img"
+                  alt=""
+                  src={ig}
+                ></img>
+              </a>
             </Col>
-            <Col xs={4} className="footer__rigth__iconsContainer__icon">
-              <img
-                className="footer__rigth__iconsContainer__icon__img"
-                alt=""
-                src={linkedin}
-              ></img>
-            </Col>
+            {/* <Col xs={4} className="footer__rigth__iconsContainer__icon">
+              <a>
+                <img
+                  className="footer__rigth__iconsContainer__icon__img"
+                  alt=""
+                  src={linkedin}
+                ></img>
+              </a>
+            </Col> */}
           </Row>
         </Col>
       </Row>

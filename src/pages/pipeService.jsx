@@ -7,9 +7,7 @@ export const PipeService = () => {
       <Container>
         <Row>
           <Col xs={12} lg={8} className="my-auto">
-            <p className={"serviceDetail__title"}>
-              Pipe Descaling and Patching
-            </p>
+            <p className={"serviceDetail__title"}>Pipe Descaling</p>
           </Col>
           <Col
             xs={12}
@@ -30,22 +28,29 @@ export const PipeService = () => {
             xs={12}
             lg={8}
             className="my-auto"
-            style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
+            style={{
+              paddingLeft: "2rem",
+              paddingRight: "2rem",
+              paddingBottom: "2rem",
+            }}
           >
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "300",
                 textAlign: "justify",
               }}
             >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+              Pipe descaling entails the use of water pressure or chemical
+              cleaners to remove hardened detritus and debris from sewer and
+              drain pipes. This technique will restore the normal flow of water
+              throughout your home or business, and allow your plumbing systems
+              to drain properly. Pipe descaling services typically utilize a
+              hose, inserted into the scaled pipe, that blasts away the scales
+              with high water pressure or suction. The scales will then need to
+              be removed, so they do not collect and form another blockage. In
+              the event that your home or business requires pipe descaling,
+              consider contacting us.
             </p>
           </Col>
           <Col
@@ -69,10 +74,7 @@ export const PipeService = () => {
           style={{ paddingTop: "2rem" }}
         >
           <Col xs={12} lg={8} className="my-auto">
-            <p className={"serviceDetail__title__right"}>
-              {" "}
-              Pipe Descaling and Patching Services
-            </p>
+            <p className={"serviceDetail__title__right"}> Patching</p>
           </Col>
           <Col
             xs={12}
@@ -84,19 +86,19 @@ export const PipeService = () => {
               textAlign: "right",
             }}
           >
-            <ul
+            <p
               style={{
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "300",
                 textAlign: "justify",
               }}
             >
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
+              Pipe patching / Re Lining is a service that can repair certain
+              types of damaged underground pipe work without having to carry out
+              excavations. This means of repair is fast, efficient and requires
+              no damage to the surface. Access to the pipe is through the local
+              manholes.
+            </p>
           </Col>
         </Row>
 
@@ -104,7 +106,7 @@ export const PipeService = () => {
           <Col xs={12}>
             <p
               style={{
-                fontSize: "40px",
+                fontSize: "28px",
                 fontWeight: "700",
                 textAlign: "center",
                 color: "white",

@@ -28,22 +28,25 @@ export const CameraService = () => {
             xs={12}
             lg={8}
             className="my-auto"
-            style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
+            style={{
+              paddingLeft: "2rem",
+              paddingRight: "2rem",
+              paddingBottom: "2rem",
+            }}
           >
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "300",
                 textAlign: "justify",
               }}
             >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+              Our sewer inspection camera can identify nearly any problem with
+              your sewer line, but these are some of the most common: Tree root
+              infiltrations: These are most common with old pipes made out of
+              clay, cast iron, or other porous materials. Tree roots seek out
+              water sources as they grow, and if they find a crack in your sewer
+              pipe, they’ll grow.
             </p>
           </Col>
           <Col
@@ -62,46 +65,11 @@ export const CameraService = () => {
           </Col>
         </Row>
 
-        <Row
-          className="justify-content-end my-auto"
-          style={{ paddingTop: "2rem" }}
-        >
-          <Col xs={12} lg={8} className="my-auto">
-            <p className={"serviceDetail__title__right"}>
-              Camera Inspection Services
-            </p>
-          </Col>
-          <Col
-            xs={12}
-            lg={8}
-            className="my-auto"
-            style={{
-              paddingLeft: "2rem",
-              paddingRight: "2rem",
-              textAlign: "right",
-            }}
-          >
-            <ul
-              style={{
-                fontSize: "28px",
-                fontWeight: "300",
-                textAlign: "justify",
-              }}
-            >
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </Col>
-        </Row>
-
         <Row style={{ paddingTop: "3rem" }}>
           <Col xs={12}>
             <p
               style={{
-                fontSize: "40px",
+                fontSize: "28px",
                 fontWeight: "700",
                 textAlign: "center",
                 color: "white",

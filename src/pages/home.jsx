@@ -21,7 +21,7 @@ export const Home = () => {
                 img="plumbing.png"
                 color="secondary"
                 title="Plumbing"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                text="Homeowners trust JJ Plumbing And Drain Services for all of their install repair and replacement needs including: sewer drain, faucet, sink, toilet, shower & tubs, waterlines, pipework, disposers, dishwashers, water heater and more."
               />
             </Row>
             <Row className="justify-content-end">
@@ -30,7 +30,7 @@ export const Home = () => {
                 img="drainCleaning.png"
                 color="main"
                 title="Drain Cleaning"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                text="JJ Plumbing And Drain Services professionals are available 24/7 to perform routine drain maintenance, emergency drain cleaning, sewer cleaning. Our drain cleaning services include floor drains, downspout drains, storm drains sewer drains and more."
               />
             </Row>
             <Row>
@@ -39,7 +39,7 @@ export const Home = () => {
                 color="secondary"
                 img="pipeDescaling.png"
                 title="Pipe Descaling and Patching"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                text="Pipe descaling entails the use of water pressure or chemical cleaners to remove hardened detritus and debris from sewer and drain pipes. This technique will restore the normal flow of water throughout your home or business, and allow your plumbing systems to drain properly. Pipe patching / Re Lining is a service that can repair certain types of damaged underground pipe work without having to carry out excavations."
               />
             </Row>
             <Row className="justify-content-end">
@@ -48,7 +48,7 @@ export const Home = () => {
                 img="cameraInspection.png"
                 color="main"
                 title="Camera Inspection"
-                text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                text="Our sewer inspection camera can identify nearly any problem with your sewer line, but these are some of the most common: Tree root infiltrations: These are most common with old pipes made out of clay, cast iron, or other porous materials. "
               />
             </Row>
           </Container>

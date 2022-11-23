@@ -28,22 +28,22 @@ export const DrainCleaningService = () => {
             xs={12}
             lg={8}
             className="my-auto"
-            style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
+            style={{
+              paddingLeft: "2rem",
+              paddingRight: "2rem",
+              paddingBottom: "2rem",
+            }}
           >
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "300",
                 textAlign: "justify",
               }}
             >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+              JJ Plumbing And Drain Services professionals are available 24/7 to
+              perform routine drain maintenance, emergency drain cleaning, sewer
+              cleaning.
             </p>
           </Col>
           <Col
@@ -83,16 +83,16 @@ export const DrainCleaningService = () => {
           >
             <ul
               style={{
-                fontSize: "28px",
+                fontSize: "24px",
                 fontWeight: "300",
                 textAlign: "justify",
               }}
             >
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Floor drains</li>
+              <li>Downspout drains</li>
+              <li>Storm drains</li>
+              <li>Sewer drains</li>
+              <li>And more!</li>
             </ul>
           </Col>
         </Row>
@@ -101,7 +101,7 @@ export const DrainCleaningService = () => {
           <Col xs={12}>
             <p
               style={{
-                fontSize: "40px",
+                fontSize: "28px",
                 fontWeight: "700",
                 textAlign: "center",
                 color: "white",
