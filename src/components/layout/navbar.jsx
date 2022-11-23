@@ -113,7 +113,7 @@ export const Navbar = () => {
           <Link to={"/services/cameraInspection"}>Camera Inspection</Link>
         </Col>
         <Col className="navbar__options__component">
-          <Link to={"/about"}>About</Link>
+          <Link to={"/aboutUs"}>About</Link>
         </Col>
         <Col className="navbar__options__component">
           <Link to={"/locations"}>Location</Link>
@@ -155,7 +155,7 @@ export const Navbar = () => {
               </Row>
               <Row xs={12}>
                 <Col className="navbar__responsive__component">
-                  <Link to={"/about"}>About</Link>
+                  <Link to={"/aboutUs"}>About</Link>
                 </Col>
               </Row>
               <Row xs={12}>

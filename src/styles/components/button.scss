@@ -25,24 +25,24 @@
 
   &__main-filled {
     @extend .button;
-    text-align: center;
-    background-color: $main-color;
-
-    font-size: 24px;
-    position: relative;
-    bottom: 0rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 49px;
-    padding: 10px 45px 10px 45px;
+    text-align: center !important;
+    background-color: $main-color !important;
+    font-family: "F37 Ginger" !important;
+    font-size: 24px !important;
+    position: relative !important;
+    bottom: 0rem !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 49px !important;
+    padding: 10px 45px 10px 45px !important;
   }
   &__main-filled:hover {
-    border-style: outset;
+    border-style: outset !important;
     background-color: #28438a !important;
-    border: none;
+    border: none !important;
   }
   &__main-filled:focus {
-    border-style: outset;
+    border-style: outset !important;
     background-color: #28438a !important;
-    border: none;
+    border: none !important;
   }
 }

@@ -7,6 +7,7 @@ import { Home } from "../pages/home";
 import { PipeService } from "../pages/pipeService";
 import { PlumbingService } from "../pages/plumbingService";
 import { NotFound } from "../pages/notFound";
+import { AboutUs } from "../pages/aboutUs";
 
 function AppRoutes() {
   return (
@@ -21,7 +22,7 @@ function AppRoutes() {
         />
         <Route path="/services/pipeDescaling" element={<PipeService />} />
         <Route path="/services/cameraInspection" element={<CameraService />} />
-
+        <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
