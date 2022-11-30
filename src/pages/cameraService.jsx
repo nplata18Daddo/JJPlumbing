@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
 export const CameraService = () => {
   return (
     <div className="services__container" style={{ paddingTop: "2rem" }}>
@@ -55,13 +56,29 @@ export const CameraService = () => {
             className="my-auto"
             style={{ textAlign: "center", justifyContent: "center" }}
           >
-            <img
-              style={{
-                width: "60%",
-                borderRadius: "30px",
-              }}
-              src={`/images/plumbingPicture.png`}
-            ></img>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/cameraInspection3.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/cameraInspection2.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/cameraInspection1.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
 

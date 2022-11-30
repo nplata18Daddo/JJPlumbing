@@ -38,7 +38,7 @@ export const Navbar = () => {
           lg={4}
           className="navbar__topRow__component__spartanburg"
         >
-          <Link to={"/location"}>Greenvile & Spartanburg</Link>
+          <Link to={"/locations"}>Greenvile & Spartanburg</Link>
         </Col>
         <Col xs={5} md={4} lg={4} className="navbar__topRow__component">
           864 448 4866

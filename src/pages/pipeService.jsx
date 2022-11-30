@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
 export const PipeService = () => {
   return (
     <div className="services__container" style={{ paddingTop: "2rem" }}>
@@ -59,13 +60,29 @@ export const PipeService = () => {
             className="my-auto"
             style={{ textAlign: "center", justifyContent: "center" }}
           >
-            <img
-              style={{
-                width: "60%",
-                borderRadius: "30px",
-              }}
-              src={`/images/plumbingPicture.png`}
-            ></img>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/pipe1.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/pipe2.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/pipe3.jpeg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
 
@@ -76,30 +93,51 @@ export const PipeService = () => {
           <Col xs={12} lg={8} className="my-auto">
             <p className={"serviceDetail__title__right"}> Patching</p>
           </Col>
-          <Col
-            xs={12}
-            lg={8}
-            className="my-auto"
-            style={{
-              paddingLeft: "2rem",
-              paddingRight: "2rem",
-              textAlign: "right",
-            }}
-          >
-            <p
+          <Row>
+            <Col
+              xs={12}
+              lg={4}
+              className="my-auto"
               style={{
-                fontSize: "24px",
-                fontWeight: "300",
-                textAlign: "justify",
+                textAlign: "center",
+                justifyContent: "center",
+                paddingTop: "1rem",
               }}
             >
-              Pipe patching / Re Lining is a service that can repair certain
-              types of damaged underground pipe work without having to carry out
-              excavations. This means of repair is fast, efficient and requires
-              no damage to the surface. Access to the pipe is through the local
-              manholes.
-            </p>
-          </Col>
+              <img
+                style={{
+                  width: "60%",
+                  borderRadius: "30px",
+                }}
+                src="/images/patching.jpeg"
+              ></img>
+            </Col>
+            <Col
+              xs={12}
+              lg={8}
+              className="my-auto"
+              style={{
+                paddingLeft: "2rem",
+                paddingRight: "2rem",
+                textAlign: "right",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "300",
+                  textAlign: "justify",
+                  paddingTop: "2rem",
+                }}
+              >
+                Pipe patching / Re Lining is a service that can repair certain
+                types of damaged underground pipe work without having to carry
+                out excavations. This means of repair is fast, efficient and
+                requires no damage to the surface. Access to the pipe is through
+                the local manholes.
+              </p>
+            </Col>
+          </Row>
         </Row>
 
         <Row style={{ paddingTop: "3rem" }}>

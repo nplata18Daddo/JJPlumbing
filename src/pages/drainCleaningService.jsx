@@ -7,7 +7,9 @@ export const DrainCleaningService = () => {
       <Container>
         <Row>
           <Col xs={12} lg={8} className="my-auto">
-            <p className={"serviceDetail__title"}>Drain Cleaning</p>
+            <p className={"serviceDetail__title"}>
+              Drain Cleaning, Hydro Jetter
+            </p>
           </Col>
           <Col
             xs={12}
@@ -57,7 +59,7 @@ export const DrainCleaningService = () => {
                 width: "60%",
                 borderRadius: "30px",
               }}
-              src={`/images/plumbingPicture.png`}
+              src={`/images/drain.jpeg`}
             ></img>
           </Col>
         </Row>
