@@ -32,7 +32,7 @@ export const Footer = () => {
           <Row className="footer__rigth__follow">FOLLOW US</Row>
           <Row xs={12} className="footer__rigth__iconsContainer text-center">
             <Col xs={6} className="footer__rigth__iconsContainer__icon">
-              <a href="www.facebook.com/juan.ddrain">
+              <a href="https://www.facebook.com/juan.ddrain">
                 <img
                   className="footer__rigth__iconsContainer__icon__img"
                   alt=""
