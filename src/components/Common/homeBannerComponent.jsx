@@ -18,6 +18,7 @@ export const HomeBannerComponent = () => {
                   fontSize: "50px",
                   color: " #FFFFFF",
                   fontWeight: "700",
+                  textShadow: "0.17rem 0.17rem 0.1rem #28438a",
                 }}
               >
                 Your Plumbing and Drain Cleaning Professionals

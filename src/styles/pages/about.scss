@@ -1,0 +1,130 @@
+.about {
+
+    background-color: $darkblue !important;
+    padding: 0;
+    max-width: 100vw;
+    
+
+    &__row{
+        max-width: 100vw !important;
+    }
+
+    &__barraAzul {
+        background-color: $darkblue !important;
+        min-height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding: 0;
+        @media (max-width: 450px) {
+            min-height: 25vh;
+          }
+          
+
+        &__about {
+            font-weight: 700;
+            font-size: 44px;
+            @media (max-width: 450px) {
+                font-size: 35px;
+              }
+            @media (max-width: 300px) {
+                font-size: 25px;
+              }
+        }
+
+        &__your {
+            font-weight: 700;
+            font-size: 25px;
+            @media (max-width: 450px) {
+                font-size: 15px;
+              }
+              @media (max-width: 300px) {
+                font-size: 10px;
+              }
+        }
+
+        
+    }
+
+    &__left {
+        background-image: url('../../assets/images/image17.png');
+        padding: 0;
+        background-repeat: no-repeat;
+    }
+
+    &__right {
+        background-image: url('../../assets/images/image17.png');
+        padding: 0;
+        transform:scaleX(-1) !important;
+        background-repeat: no-repeat;
+    }
+
+
+}
+
+.history {
+position: relative;
+    background-color: #628CBC !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    &__tittle {
+        margin-top: 140px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        @media (max-width: 450px) {
+            font-size: 45px;
+          }
+    }
+    &__info{
+      margin-bottom: 20px;
+    }
+
+    .carrouselCOntainer{
+        max-height: 30vh;
+    }
+
+}
+
+.circle
+  {
+    position: absolute;
+    left: 43vw;
+    top: -15vh;
+    background-color: white;
+    border-radius: 50%;
+    width: 14vw;
+    aspect-ratio: 1/1;
+
+    @media (max-width: 1500px) {
+        top: -13vh;
+      }
+      @media (max-width: 1200px) {
+        top: -11vh;
+      }
+      @media (max-width: 1000px) {
+        top: -9vh;
+      }
+      @media (max-width: 800px) {
+        top: -9vh;
+        width: 20vw;
+        left: 40vw;
+      }
+      @media (max-width: 500px) {
+        top: -4vh;
+        width: 24vw;
+        left: 38vw;
+      }
+      @media (max-width: 400px) {
+        top: -6vh;
+        width: 30vw;
+        left: 35vw;
+       
+      }
+  }
+  

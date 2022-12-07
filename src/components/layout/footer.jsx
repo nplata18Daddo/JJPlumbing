@@ -10,7 +10,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <><div className="footer">
       <Row className="footer_row" style={{ maxWidth: "100%" }}>
         <Col xs={1} lg={3} className="footer__left">
           <img className="footer__left__img" alt="" src={izquierdaImg}></img>
@@ -50,17 +50,20 @@ export const Footer = () => {
               </a>
             </Col>
             {/* <Col xs={4} className="footer__rigth__iconsContainer__icon">
-              <a>
-                <img
-                  className="footer__rigth__iconsContainer__icon__img"
-                  alt=""
-                  src={linkedin}
-                ></img>
-              </a>
-            </Col> */}
+      <a>
+        <img
+          className="footer__rigth__iconsContainer__icon__img"
+          alt=""
+          src={linkedin}
+        ></img>
+      </a>
+    </Col> */}
           </Row>
         </Col>
       </Row>
-    </div>
+
+    </div><div className="designed">
+        Web designed by Daddo Software
+      </div></>
   );
 };
